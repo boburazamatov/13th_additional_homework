@@ -4,16 +4,37 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1350px;
+}
+
+.table-wrapper {
+    /* position: relative; */
     background-image: url(/img/wp3152222.jpg);
     width: 1350px;
+    height: 100vh;
     background-repeat: no-repeat;
+    padding-top: 50px;
 }
-.time-table {
-    width: 600px;
-    background-color: aquamarine;
+
+.header-text {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.header-text::first-letter {
+    color: red;
+    font-family: cursive;
+    font-size: 70px;
+}
+
+.table-list {
     position: absolute;
-    top: 20%;
-    left: 30%;
+    left: 375px;
+    width: 600px;
+}
+
+.time-table {
     border-collapse: collapse;
     text-align: center;
 }
@@ -34,4 +55,17 @@ tr:nth-child(2n) {
 
 tr:nth-child(2n+1) {
     background-color: rgb(56,184,216);
+}
+
+.total:first-child {
+    position: absolute;
+    background-color: #bbb;
+    font-size: 18px; 
+}
+.total-list {
+    width: 430px;   
+}
+
+.total-price {
+    width: 155px;
 }
